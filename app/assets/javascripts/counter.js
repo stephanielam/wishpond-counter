@@ -3,8 +3,10 @@ $(document).ready(function(){
   var record = $('#record');
 
   record.on("click", function (e) {
-    console.log("recorded" + count);
-    Time.create([{ number: count}]);
+    console.log("recorded " + count);
+      $("#list").append("<h2>"+count+"</h2>");
+    $.post('/counter',{count: count},function(){
+    })
   });
 
   var myVar = setInterval(function () { 

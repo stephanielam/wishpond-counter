@@ -1,41 +1,56 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
-
 h1 {
-  font-size: 70px;
-  margin: 10px;
+  font-size: 80px;
+  width: 120px;
+  padding-top: 10px;
+  text-align: center;
+  border: 6px solid white;
+  color: red;
+  font-family: Orbitron;
+  text-shadow: 2px 2px 5px black;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 h2 {
-  color: red;
+  display: inline-block;
+  margin: 20px;
 }
 
 body {
-  background: aliceblue;
+  background: #4E4E4E;
   font-family: Open Sans Condensed;
+  color: white;
 }
 
 .line {
   border: 2px solid black;
-  margin: 20px;
 }
 
 button {
+  display: inline-block;
+  color: black;
   padding: 20px;
   font-weight: bold;
   font-size: 20px;
+  background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+  background-image: linear-gradient(top, #f4f1ee, #fff);
+  border-radius: 50%;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+  height: 92px;
+  width: 92px;      
+  margin: 30px;  
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+  text-align: center;
+}
+
+button:hover {
+  background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+  background-image: linear-gradient(top, #fff, #f4f1ee);
+  color: red;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
 }

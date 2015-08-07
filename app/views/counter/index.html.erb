@@ -1,8 +1,12 @@
 <div class='container'>
-  <h1 id="count"> <%= @count %></h1>
-  <div class="line"></div>
-  <% @times.each do |time| %>
-  <h2><%= time.number %></h2>
-  <% end %>
-  <button id="record">RECORD</button>
+  <div class='center'>
+    <h1 id="count"> <%= @count %></h1>  
+    <button id="record">Record</button>
+    <div class="line"></div>
+  </div>
+  <div id="list">
+    <% @times.each do |time| %>
+    <h2><%= time.number %></h2>
+    <% end %>
+  </div>
 </div>

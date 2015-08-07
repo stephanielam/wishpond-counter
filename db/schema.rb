@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150806231727) do
 
-  create_table "times", force: true do |t|
+  create_table "timerecords", force: true do |t|
     t.integer  "number"
     t.datetime "created_at"
     t.datetime "updated_at"
