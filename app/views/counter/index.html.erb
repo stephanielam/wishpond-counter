@@ -1,0 +1,8 @@
+<div class='container'>
+  <h1 id="count"> <%= @count %></h1>
+  <div class="line"></div>
+  <% @times.each do |time| %>
+  <h2><%= time.number %></h2>
+  <% end %>
+  <button id="record">RECORD</button>
+</div>
